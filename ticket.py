@@ -26,6 +26,10 @@ def send_main_menu(chat_id):
     markup.add(item_schedule, item_booking, item_have_booked)
 
     bot.send_message(chat_id, "Ласкаво просимо до головного меню!", reply_markup=markup)
+    bot.send_message(chat_id, "Ви можете самостійно забронювати квиток за допомогою цієї посилання [Monobus "
+                              "Бронювання квитків] (https://klr.com.ua/invite/f8c7eef2-24bf-4e37-9195-946404924833/). "
+                              "Просто перейдіть"
+                              "за ним та оберіть потрібний рейс.", reply_markup=markup)
 
 
 # Обработка команды "Дізнатись розклад" для начала запроса расписания
